@@ -17,16 +17,12 @@
 #define TRAILING_DELIMITER 0
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
-#define BLOCKS(X)             \
-    X("", "sb-mail", 600, 1)  \
-    X("", "sb-music", 0, 2)   \
-    X("", "sb-disk", 1800, 3) \
-    X("", "sb-memory", 10, 4) \
-    X("", "sb-loadavg", 5, 5) \
-    X("", "sb-mic", 0, 6)     \
-    X("", "sb-record", 0, 7)  \
-    X("", "sb-volume", 0, 8)  \
-    X("", "sb-battery", 5, 9) \
-    X("", "sb-date", 1, 10)
+#define BLOCKS(X) \
+    X("", "~/.local/bin/statusbar/sb-cpu", 2, 1) \
+    X("", "~/.local/bin/statusbar/sb-ram", 2, 2) \
+    X("", "~/.local/bin/statusbar/sb-procs", 2, 3) \
+    X("", "~/.local/bin/statusbar/sb-battery", 5, 4) \
+    X("", "~/.local/bin/statusbar/sb-volume", 0, 5) \
+    X("", "~/.local/bin/statusbar/sb-clock", 60, 6)
 
 #endif  // CONFIG_H
