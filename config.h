@@ -20,7 +20,6 @@
 #define BLOCKS(X) \
     X("", "~/.local/bin/statusbar/sb-cpu", 2, 1) \
     X("", "~/.local/bin/statusbar/sb-ram", 2, 2) \
-    X("", "~/.local/bin/statusbar/sb-procs", 2, 3) \
     X("", "~/.local/bin/statusbar/sb-battery", 5, 4) \
     X("", "~/.local/bin/statusbar/sb-volume", 0, 5) \
     X("", "~/.local/bin/statusbar/sb-clock", 60, 6)
